@@ -125,11 +125,10 @@ main {
   width: 760px;
   margin: 0 auto;
 }
-.content-intro-img img {
-  display: block;
+.content-intro-img {
   margin: 0 auto;
-  width: 960px;
-  height: 632px;
+  max-width: 960px;
+  max-height: 632px;
 }
 
 .main-content-how-to-use {
@@ -177,7 +176,7 @@ main {
   background: #FFFFFF;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.06);
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px 30px;
 }
 .step-icon {
   position: relative;
@@ -225,9 +224,23 @@ main {
   justify-content: space-evenly;
   margin: 110px 0 0 0;
 }
+.htu-review-item {
+  box-shadow: 8px 40px 80px rgba(0, 0, 0, 0.08);
+}
 .htu-review-item img {
-  width: 480px;
-  height: 446px;
+  max-width: 260px;
+  max-height: 416px;
+  width: 100%;
+  height: auto;
+}
+.htu-reviews .htu-review-item:nth-child(1) {
+  transform: rotate(30deg);  
+}
+.htu-reviews .htu-review-item:nth-child(2) {
+  transform: rotate(30deg) translateY(-30px);
+}
+.htu-reviews .htu-review-item:nth-child(3) {
+  transform: rotate(30deg) translateY(-60px);
 }
 
 .main-content-download {
