@@ -13,7 +13,7 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: './animations/shasket_landingpage_animation_01_vie.json' // the path to the animation json
+  path: '../animations/shasket_landingpage_animation_01_vie.json' // the path to the animation json
 });
 
 lottie.loadAnimation({
@@ -21,5 +21,5 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: './animations/shasket_landingpage_animation_02.json' // the path to the animation json
+  path: '../animations/shasket_landingpage_animation_02.json' // the path to the animation json
 });
