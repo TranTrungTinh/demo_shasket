@@ -15,33 +15,67 @@
 </head>
 <body>
   <div class="header-top">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="header-top-wrapper">
-          <a href="#">
-            <img src="../images/logo.png" alt="Main Logo" />
-          </a>
-          <div class="dropdown">
-            <div class="header-top-switch">
-              <img src="../images/flag_en.png" alt="">
-              <span>English</span>
-              <i class="fa fa-angle-down"></i>
-            </div>
-            <div class="dropdown-content">
-              <a href="/vn/">Vietnamese</a>
+    <div class="header-top-web">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="header-top-wrapper">
+            <a href="#">
+              <img src="../images/logo.png" alt="Main Logo" />
+            </a>
+            <div class="dropdown">
+              <div class="header-top-switch">
+                <img src="../images/flag_en.png" alt="">
+                <span>English</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <a href="/vn/">Vietnamese</a>
+              </div>
             </div>
           </div>
         </div>
+        <div class="col-sm-6">
+          <div class="navigation-bar">
+            <p class="nav-scroll"><a href="#content-intro">Introduce</a></p>
+            <p class="nav-scroll"><a href="#content-how-to-use">How to use</a></p>
+            <p class="nav-scroll"><a href="#content-contact">Contact</a></p>
+            <p class="nav-scroll"><a href="#content-download-info" style="color: #000">DOWNLOAD APP</a></p>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <div class="navigation-bar">
-          <p class="nav-scroll"><a href="#content-intro">Giới thiệu</a></p>
-          <p class="nav-scroll"><a href="#content-how-to-use">Cách dùng</a></p>
-          <p class="nav-scroll"><a href="#content-contact">Liên hệ</a></p>
-          <p class="nav-scroll"><a href="#content-download-info" style="color: #000">TẢI APP</a></p>
+
+    </div>
+
+    <div class="header-top-mobile">
+      <div class="header-res-menu">
+        <div class="dropdown-res">
+          <i id="header-menu" class="fas fa-bars"></i>
+          <div class="dropdown-content-res">
+            <a href="#content-intro">Introduce</a>
+            <a href="#content-how-to-use">How to use</a>
+            <a href="#content-contact">Contact</a>
+            <a href="#content-download-info">DOWNLOAD APP</a>
+          </div>
+        </div>
+        
+        <a href="#">
+          <img src="../images/logo.png" alt="Main Logo" />
+        </a>
+      </div>
+      <div class="header-res-languge">
+        <div class="dropdown">
+          <div class="header-top-switch">
+            <img src="../images/flag_en.png" alt="">
+            <span>English</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="/vn/">Vietnamese</a>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
   <header>
     <div class="container">
@@ -81,6 +115,7 @@
   </div>
   
   <main>
+    <div id="content-intro" style="height: 100px"></div>
     <div class="main-content-intro">
       <div class="container">
         <div id="content-intro" class="content-intro-top">
@@ -105,44 +140,55 @@
 
       <div class="content-how-to-use">
         <div class="container">
-          <div class="htu-steps">
-            <div class="htu-step-item">
-              <div class="step-icon">
-                <img src="../images/edit-icon.png" alt="">
+
+          <div class="htu-steps-reviews-wrapper">
+
+            <div class="htu-steps-reviews">
+              <div class="htu-step-item">
+                <div class="step-icon">
+                  <img src="../images/edit-icon.png" alt="">
+                </div>
+                <h5 class="step-title">Compose invitation</h5>
+                <p class="step-content">Compose invitation by Shasket to show your need about sale promotion item.</p>
+                <p class="step-num">1</p>
               </div>
-              <h5 class="step-title">Compose invitation</h5>
-              <p class="step-content">Compose invitation by Shasket to show your need about sale promotion item.</p>
-              <p class="step-num">1</p>
-            </div>
-            <div class="htu-step-item">
-              <div class="step-icon">
-                <img src="../images/waiting-icon.png" alt="">
+
+              <div class="htu-review-item">
+                <img src="../images/review01.png" alt="">
               </div>
-              <h5 class="step-title">Wait for feedback</h5>
-              <p class="step-content">Your invitation will be broadcasted to people nearby, all you need is wait for their response.</p>
-              <p class="step-num">2</p>
             </div>
-            <div class="htu-step-item">
-              <div class="step-icon">
-                <img src="../images/shaking-icon.png" alt="">
+
+            <div class="htu-steps-reviews">
+              <div class="htu-step-item">
+                <div class="step-icon">
+                  <img src="../images/waiting-icon.png" alt="">
+                </div>
+                <h5 class="step-title">Wait for feedback</h5>
+                <p class="step-content">Your invitation will be broadcasted to people nearby, all you need is wait for their response.</p>
+                <p class="step-num">2</p>
               </div>
-              <h5 class="step-title">Contact to buy</h5>
-              <p class="step-content">When someone agree to join to your invitation, let contact and go for shopping each other.</p>
-              <p class="step-num">3</p>
+              <div class="htu-review-item">
+                <img src="../images/review02.png" alt="">
+              </div>
             </div>
+
+            <div class="htu-steps-reviews">
+              <div class="htu-step-item">
+                <div class="step-icon">
+                  <img src="../images/shaking-icon.png" alt="">
+                </div>
+                <h5 class="step-title">Contact to buy</h5>
+                <p class="step-content">When someone agree to join to your invitation, let contact and go for shopping each other.</p>
+                <p class="step-num">3</p>
+              </div>
+
+              <div class="htu-review-item">
+                <img src="../images/review03.png" alt="">
+              </div>
+            </div>
+
           </div>
-    
-          <div class="htu-reviews">
-            <div class="htu-review-item">
-              <img src="../images/review01.png" alt="">
-            </div>
-            <div class="htu-review-item">
-              <img src="../images/review02.png" alt="">
-            </div>
-            <div class="htu-review-item">
-              <img src="../images/review03.png" alt="">
-            </div>
-          </div>
+
         </div>
       </div>
     </div>

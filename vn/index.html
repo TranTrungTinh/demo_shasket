@@ -15,33 +15,66 @@
 </head>
 <body>
   <div class="header-top">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="header-top-wrapper">
-          <a href="#">
-            <img src="../images/logo.png" alt="Main Logo" />
-          </a>
-          <div class="dropdown">
-            <div class="header-top-switch">
-              <img src="../images/flag_vn.png" alt="">
-              <span>Vietnamese</span>
-              <i class="fa fa-angle-down"></i>
-            </div>
-            <div class="dropdown-content">
-              <a href="/en/">English</a>
+    <div class="header-top-web">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="header-top-wrapper">
+            <a href="#">
+              <img src="../images/logo.png" alt="Main Logo" />
+            </a>
+            <div class="dropdown">
+              <div class="header-top-switch">
+                <img src="../images/flag_vn.png" alt="">
+                <span>Vietnamese</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <a href="/en/">English</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="navigation-bar">
-          <p class="nav-scroll"><a href="#content-intro">Giới thiệu</a></p>
-          <p class="nav-scroll"><a href="#content-how-to-use">Cách dùng</a></p>
-          <p class="nav-scroll"><a href="#content-contact">Liên hệ</a></p>
-          <p class="nav-scroll"><a href="#content-download-info" style="color: #000">TẢI APP</a></p>
+        <div class="col-sm-6">
+          <div class="navigation-bar">
+            <p class="nav-scroll"><a href="#content-intro">Giới thiệu</a></p>
+            <p class="nav-scroll"><a href="#content-how-to-use">Cách dùng</a></p>
+            <p class="nav-scroll"><a href="#content-contact">Liên hệ</a></p>
+            <p class="nav-scroll"><a href="#content-download-info" style="color: #000">TẢI APP</a></p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="header-top-mobile">
+      <div class="header-res-menu">
+          <div class="dropdown-res">
+            <i id="header-menu" class="fas fa-bars"></i>
+            <div class="dropdown-content-res">
+              <a href="#content-intro">Giới thiệu</a>
+              <a href="#content-how-to-use">Cách dùng</a>
+              <a href="#content-contact">Liên hệ</a>
+              <a href="#content-download-info">TẢI APP</a>
+            </div>
+          </div>
+          
+          <a href="#">
+            <img src="../images/logo.png" alt="Main Logo" />
+          </a>
+      </div>
+      <div class="header-res-languge">
+        <div class="dropdown">
+          <div class="header-top-switch">
+            <img src="../images/flag_vn.png" alt="">
+            <span>Vietnamese</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="/en/">English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
   </div>
   <header>
     <div class="container">
@@ -80,9 +113,10 @@
     </div>
   </div>
   <main>
-    <div class="main-content-intro">
+    <div id="content-intro" style="height: 100px"></div>
+    <div  class="main-content-intro">
       <div class="container">
-        <div id="content-intro" class="content-intro-top">
+        <div class="content-intro-top">
           <h5>Bạn không muốn phải mua quá nhiều?</h5>
           <p>Các khuyến mãi <span style="font-weight: 600">“Mua 1 tặng 1”, “Quà tặng đính kèm”, “Giảm giá khi mua số lượng lớn”</span> có thể khiến bạn phải mua nhiều hơn nhu cầu của mình</p>
           <div class="content-intro-img" id="content-intro-01"></div>
@@ -96,6 +130,7 @@
         </div>
       </div>
     </div>
+    
     <div id="content-how-to-use" class="main-content-how-to-use">
       <div class="htu-cover">
         <h2 class="htu-title">Sử dụng Shasket như thế nào?</h2>
@@ -103,43 +138,52 @@
 
       <div class="content-how-to-use">
         <div class="container">
-          <div class="htu-steps">
-            <div class="htu-step-item">
-              <div class="step-icon">
-                <img src="../images/edit-icon.png" alt="">
+          <div class="htu-steps-reviews-wrapper">
+
+            <div class="htu-steps-reviews">
+              <div class="htu-step-item">
+                <div class="step-icon">
+                  <img src="../images/edit-icon.png" alt="">
+                </div>
+                <h5 class="step-title">Soạn lời mời</h5>
+                <p class="step-content">Tạo lời mời trên Shasket để giúp mọi người biết thông tin về mặt hàng cần mua chung.</p>
+                <p class="step-num">1</p>
               </div>
-              <h5 class="step-title">Soạn lời mời</h5>
-              <p class="step-content">Tạo lời mời trên Shasket để giúp mọi người biết thông tin về mặt hàng cần mua chung.</p>
-              <p class="step-num">1</p>
-            </div>
-            <div class="htu-step-item">
-              <div class="step-icon">
-                <img src="../images/waiting-icon.png" alt="">
+
+              <div class="htu-review-item">
+                <img src="../images/review01.png" alt="">
               </div>
-              <h5 class="step-title">Đợi một chút</h5>
-              <p class="step-content">Lời mời của bạn sẽ được gửi tới những người xung quanh, hãy đợi  mọi người đọc tin và phản hồi nhé.</p>
-              <p class="step-num">2</p>
             </div>
-            <div class="htu-step-item">
-              <div class="step-icon">
-                <img src="../images/shaking-icon.png" alt="">
+
+            <div class="htu-steps-reviews">
+              <div class="htu-step-item">
+                <div class="step-icon">
+                  <img src="../images/waiting-icon.png" alt="">
+                </div>
+                <h5 class="step-title">Đợi một chút</h5>
+                <p class="step-content">Lời mời của bạn sẽ được gửi tới những người xung quanh, hãy đợi  mọi người đọc tin và phản hồi nhé.</p>
+                <p class="step-num">2</p>
               </div>
-              <h5 class="step-title">Hẹn mua chung</h5>
-              <p class="step-content">Khi lời mời được chấp nhận, hãy liên hệ với nhau để cùng mua chung ngay nhé.</p>
-              <p class="step-num">3</p>
+              <div class="htu-review-item">
+                <img src="../images/review02.png" alt="">
+              </div>
             </div>
-          </div>
-  
-          <div class="htu-reviews">
-            <div class="htu-review-item">
-              <img src="../images/review01.png" alt="">
+
+            <div class="htu-steps-reviews">
+              <div class="htu-step-item">
+                <div class="step-icon">
+                  <img src="../images/shaking-icon.png" alt="">
+                </div>
+                <h5 class="step-title">Hẹn mua chung</h5>
+                <p class="step-content">Khi lời mời được chấp nhận, hãy liên hệ với nhau để cùng mua chung ngay nhé.</p>
+                <p class="step-num">3</p>
+              </div>
+
+              <div class="htu-review-item">
+                <img src="../images/review03.png" alt="">
+              </div>
             </div>
-            <div class="htu-review-item">
-              <img src="../images/review02.png" alt="">
-            </div>
-            <div class="htu-review-item">
-              <img src="../images/review03.png" alt="">
-            </div>
+
           </div>
         </div>
       </div>
