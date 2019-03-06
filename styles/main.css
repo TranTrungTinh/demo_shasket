@@ -243,10 +243,10 @@ main {
 }
 .step-icon {
   position: relative;
-  width: 80px;
-  height: 80px;
+  /* width: 80px;
+  height: auto;
   background: #FBF7F7;
-  border-radius: 80px;
+  border-radius: 80px; */
 }
 .step-icon img {
   position: absolute;
@@ -261,7 +261,7 @@ main {
   line-height: 30px;
   font-size: 20px;
   color: #666666;
-  padding: 24px 0;
+  padding: 100px 0 24px 0;
 }
 .step-content {
   font-family: Open Sans;
@@ -419,6 +419,10 @@ footer .col-sm-6:last-child {
   .header-top {
     padding: 20px 15px;
   }
+  .header-main-logo {
+    max-width: 110px;
+  }
+  
 
   .header-top-mobile {
     display: flex;
@@ -437,7 +441,7 @@ footer .col-sm-6:last-child {
   }
   #header-menu {
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     padding-right: 10px;
     cursor: pointer;
   }
