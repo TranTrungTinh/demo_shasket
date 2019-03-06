@@ -19,7 +19,7 @@ header {
   background: linear-gradient(90deg, #FF4141 0%, #FE976B 100%);
 }
 .header-top {
-  padding: 20px 270px 0px 270px;
+  padding: 20px 0 0 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,6 +30,10 @@ header {
 .header-top-wrapper {
   display: flex;
   align-items: center;
+}
+.header-main-logo {
+  max-width: 136px;
+  height: auto;
 }
 
 .dropdown {
@@ -54,6 +58,7 @@ header {
   margin-left: 7px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 7px;
 }
 
 .dropdown-content a {
@@ -64,12 +69,15 @@ header {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 7px;
+
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 
 .navigation-bar {
@@ -94,6 +102,7 @@ header {
 .navigation-bar p:last-child {
   background: #FFF95F;
   border-radius: 24px;
+  /* font-size: 13px; */
 }
 
 .header-middle {
@@ -242,7 +251,7 @@ main {
 .step-icon img {
   position: absolute;
   top: 35px;
-  left: 42px;
+  left: 40px;
   transform: translate(-50%, -50%);
 }
 .step-title {
@@ -273,8 +282,8 @@ main {
 }
 
 .htu-review-item img {
-  max-width: 260px;
-  max-height: 416px;
+  max-width: 240px;
+  max-height: 428px;
   width: 100%;
   height: auto;
   box-shadow: 8px 40px 80px rgba(0, 0, 0, 0.08);
@@ -340,12 +349,16 @@ main {
 }
 .content-about-info {
   font-family: 'Open Sans';
-  margin: 50px 0 0 0;
+  margin: 50px 0;
 }
 .skg-brand {
   float: right;
   margin: 20px 30px;
   font-size: 16px;
+}
+.skg-brand img {
+  width: 222px;
+  height: auto;
 }
 .skg-info {
   clear: both;
@@ -368,10 +381,27 @@ footer a {
 footer p {
   margin-top: 15px;
 }
+footer .col-sm-6:first-child {
+  transform: translateX(100%)
+}
+footer .col-sm-6:last-child {
+  transform: translateX(-100%)
+}
+
+
+/*  Helpper class */
+.border-right {
+  border-right: solid 1px #EFEFF4;
+}
+/*  End Helpper class */
 
 /* responsive web-site */
 
 @media only screen and (min-width: 1217px) {
+  .header-top-web {
+    max-width: 1136px;
+    margin: 0 auto;
+  }
   .header-top-mobile {
     display: none;
   }
@@ -545,5 +575,10 @@ footer p {
   }
   .skg-info {
     padding: 40px 0;
+  }
+
+  footer .col-sm-6:first-child, 
+  footer .col-sm-6:last-child {
+    transform: none;
   }
 }
